@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="פרויקט מעלים זיכרון של מטא ישראל ועמותת שם ונר, המחבר את הדור הצעיר לסיפורי ניצולי השואה.">
+    <title>מעלים זיכרון</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-gradient {
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #e3edf7ff 100%);
+        }
+        .text-box {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffd700 !important;
+            position: relative;
+            z-index: 3;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+        .logo-container {
+            position: relative;
+            z-index: 5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo-container img {
+            max-height: 50px;
+        }
+        .navbar .container {
+            width: 100%; /* מנצל את מלוא הרוחב */
+            max-width: none; /* מסיר הגבלת רוחב */
+            padding: 0; /* מסיר ריווחים פנימיים */
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg bg-primary p-3">
+        <div class="container"> <!-- תוקן כך שהתפריט יתפרש על כל הרוחב -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/Project_logo.svg" alt="מעלים זיכרון" class="img-fluid" style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                ☰
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light fw-bold" href="#home">דף הבית</a></li>
+                    <li class="nav-item"><a class="nav-link text-light fw-bold" href="#videos">סרטונים</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="position-relative text-center text-light py-5" style="background: url('https://images.unsplash.com/photo-1596573661411-1c307c7b474b') no-repeat center center/cover; min-height: 60vh;">
+        <div class="custom-gradient position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="container position-relative py-5">
+            <div class="text-box">
+                <img src="assets/Project_logo.svg" alt="מעלים זיכרון" class="img-fluid mb-3" style="max-width: 200px;">
+                <p class="lead">
+                    פרויקט "מעלים זיכרון" של מטא ישראל, בשיתוף עמותת "שם ונר", מחבר את הדור הצעיר לסיפורי ניצולי השואה 
+                    דרך מפגשים מרגשים עם משפיענים מובילים באינסטגרם. הפרויקט מתעד עדויות אישיות, מעלה מודעות ומנציח את 
+                    זיכרון השואה, תוך יצירת קשר בין-דורי עוצמתי שמגיע למיליוני עוקבים.
+                </p>
+            </div>
+        </div>
+        <div class="container logo-container">
+            <img src="assets/Shemvener_logo.svg" alt="Shemvener Logo" class="img-fluid">
+            <img src="assets/Meta_logo.svg" alt="Meta Logo" class="img-fluid">
+        </div>
+    </section>
+
+    <section id="videos" class="container py-5 text-center">
+        <h2 class="fw-bold">סרטוני עדויות ומפגשים</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <h3>מפגש עם ניצול השואה יוסף כהן</h3>
+            </div>
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <h3>סיפורה של רחל לוי</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-light text-center py-3">
+        <p>© 2025 מעלים זיכרון - מטא ישראל ועמותת שם ונר</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
